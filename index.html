@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
-<body>
+  <body>
+    <main class="container">
+      <h1 class="title">Piedra - Papel - Tijeras</h1>
 
-<div class="container">
-  <h1 class="title">Hola Mundo</h1>
+      <p id="instructions" class="instructions">
+        <b>Piedra</b> vence a tijeras (la piedra rompe las tijeras).
+        <br />
+        <b>Tijeras</b> vencen al papel (las tijeras cortan el papel).
+        <br />
+        <b>Papel</b> vence a la piedra (el papel envuelve la piedra).
+      </p>
 
-  <p class="paragraph" id="paragraph">Esto es una demo de <b class="bold" id="bold">Add Event Listener</b></p>
+      <p id="score" class="score hidden">
+        Player Score: <b id="score-value">0</b>
+      </p>
 
-  <button id="button" class="button">Clickeame</button>
+      <b><p id="result" class="result hidden"></p></b>
 
-  <img src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw" id='image'/>
+      <section class="img-container">
+        <img
+          id="rock-image"
+          class="image__disabled"
+          src="https://static.vecteezy.com/system/resources/previews/012/896/738/non_2x/stone-transparent-background-free-png.png"
+          alt="rock image"
+        />
 
-  <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/296/441/24a.jpg" id='hiddenImage' class="hiddenImage"/>
-  
-  <button id="reset" class="button">Reset</button>
-</div>
+        <img
+          id="paper-image"
+          class="image__disabled"
+          src="https://png.pngtree.com/png-clipart/20210309/original/pngtree-torn-memo-stationery-blank-paper-document-png-image_5809875.jpg"
+          alt="paper image"
+        />
 
-<script src="index.js"></script>
-</body>
+        <img
+          id="scissors-image"
+          class="image__disabled"
+          src="https://www.publicdomainpictures.net/pictures/500000/nahled/schaar-knipgereedschap-png.png"
+          alt="scissors image"
+        />
+      </section>
+
+      <button id="play" class="button">Play</button>
+      <img id="duck-image" class="hidden" alt="duck image" />
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>

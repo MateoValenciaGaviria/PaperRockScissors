@@ -1,4 +1,5 @@
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
 
@@ -12,19 +13,21 @@ body {
   font-size: 4rem;
 }
 
-.paragraph {
-  font-size: 2rem;
+.instructions {
+  font-size: 22px;
   color: gray;
 }
 
-.bold {
-  color: black;
+.score {
+  font-size: 22px;
 }
 
-.button {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
+.img-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 img {
@@ -32,6 +35,31 @@ img {
   height: 20%;
 }
 
-.hiddenImage {
+.image:hover {
+  background-color: rgba(116, 116, 116, 0.096);
+  cursor: pointer;
+}
+
+.image__disabled {
+  filter: grayscale(1);
+}
+
+.button {
+  background-color: rgb(51, 221, 68);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  height: 100px;
+  width: 500px;
+}
+
+.button:hover {
+  background-color: rgb(47, 202, 63);
+  cursor: pointer;
+}
+
+.hidden {
   display: none;
 }
